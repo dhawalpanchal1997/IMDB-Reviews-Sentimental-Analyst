@@ -14,24 +14,24 @@ This repository demonstrates the integration of **BigQuery** with **Vertex AI** 
 1. **Create Vertex AI Connection in BigQuery:**
    - Set up the connection and configure necessary credentials.
 
-   ![Vertex AI Connection Setup](image/Picture1.jpg)
+   ![Vertex AI Connection Setup](Outputs/Picture1.jpg)
 
 2. **Grant Permissions:**
    - Assign the `Vertex AI User` role to the service account.
 
-   ![Grant Permissions](image/Picture2.jpg)
+   ![Grant Permissions](Outputs/Picture2.jpg)
 
 3. **Remote Model Configuration:**
    - Use the text-bison LLM to create a remote model for sentiment analysis and keyword extraction.
 
-   ![Remote Model Configuration](image/Picture3.jpg)
+   ![Remote Model Configuration](Outputs/Picture3.jpg)
 
 4. **Dataset:**
    - Leverage the `bigquery-public-data` IMDB dataset:
      - Reviews from the `reviews` table.
      - Movie titles from the `title_basics` table.
 
-   ![Dataset Schema](image/Picture4.jpg)
+   ![Dataset Schema](Outputs/Picture4.jpg)
 
 ---
 
@@ -47,7 +47,7 @@ This repository demonstrates the integration of **BigQuery** with **Vertex AI** 
    - Reviews columns.
    - Movie titles (`primary_title`).
 
-   ![Sentiment Analysis Results](image/Picture5.jpg)
+   ![Sentiment Analysis Results](Outputs/Picture5.jpg)
 
 3. Document settings and elapsed time:
    - Tokens.
@@ -61,7 +61,7 @@ This repository demonstrates the integration of **BigQuery** with **Vertex AI** 
    - Negative-label match rate.
    - Overall match rate.
 
-   ![Label Match Rates](image/Picture11.jpg)
+   ![Label Match Rates](Outputs/Picture11.jpg)
 
 6. Identify mismatched reviews and evaluate agreement with the LLM output.
 
@@ -78,7 +78,7 @@ This repository demonstrates the integration of **BigQuery** with **Vertex AI** 
    - Reviews columns.
    - Movie titles.
 
-   ![Keyword Extraction Results](image/Picture13.png)
+   ![Keyword Extraction Results](Outputs/Picture13.png)
 
 3. Document settings and elapsed time:
    - Tokens.
@@ -87,7 +87,7 @@ This repository demonstrates the integration of **BigQuery** with **Vertex AI** 
 
 4. Identify the top 5 most repeated keywords per movie using `SPLIT/UNNEST`.
 
-   ![Top Keywords](image/Picture16.jpg)
+   ![Top Keywords](Outputs/Picture16.jpg)
 
 ---
 
