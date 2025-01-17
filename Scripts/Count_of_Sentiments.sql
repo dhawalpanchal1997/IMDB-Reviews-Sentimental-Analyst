@@ -1,6 +1,6 @@
 SELECT
     ar.label,
-    ml_generate_text_lim_result AS Sentiments,
+    ml_generate_text_llm_result AS Sentiments,
     COUNT(*) AS Total_Sentiments
 
 FROM
